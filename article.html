@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title - My Blog</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">My Blog</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Article Content -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <!-- Article Header -->
+                <article>
+                    <h1 class="mb-4">Article Title</h1>
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <div class="text-muted">
+                            <span>Posted on January 1, 2024</span>
+                            <span class="mx-2">•</span>
+                            <span>5 min read</span>
+                        </div>
+                        <div class="share-buttons">
+                            <button class="btn btn-outline-primary me-2" onclick="shareOnFacebook()">
+                                <i class="fab fa-facebook-f"></i>
+                            </button>
+                            <button class="btn btn-outline-info me-2" onclick="shareOnTwitter()">
+                                <i class="fab fa-twitter"></i>
+                            </button>
+                            <button class="btn btn-outline-danger" onclick="shareOnInstagram()">
+                                <i class="fab fa-instagram"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Featured Image -->
+                    <img src="presenter.jpg" class="img-fluid rounded mb-4" alt="Article Image">
+
+                    <!-- Article Content -->
+                    <div class="article-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        
+                        <h2>Subheading</h2>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        
+                        <h3>Another Subheading</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    </div>
+
+                    <!-- Article Navigation -->
+                    <div class="article-navigation mt-5">
+                        <div class="d-flex justify-content-between">
+                            <a href="#" class="btn btn-outline-primary">
+                                <i class="fas fa-arrow-left me-2"></i>Previous Article
+                            </a>
+                            <a href="#" class="btn btn-outline-primary">
+                                Next Article<i class="fas fa-arrow-right ms-2"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Related Articles -->
+                    <div class="related-articles mt-5">
+                        <h3>Related Articles</h3>
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="card">
+                                    <img src="presenter.jpg" class="card-img-top" alt="Related Article">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Related Article 1</h5>
+                                        <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card">
+                                    <img src="presenter.jpg" class="card-img-top" alt="Related Article">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Related Article 2</h5>
+                                        <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card">
+                                    <img src="presenter.jpg" class="card-img-top" alt="Related Article">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Related Article 3</h5>
+                                        <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Comments Section -->
+                    <div class="comments-section mt-5">
+                        <h3>Comments</h3>
+                        <div class="comment mb-4">
+                            <div class="d-flex">
+                                <img src="presenter.jpg" class="rounded-circle me-3" alt="User">
+                                <div>
+                                    <h5 class="mb-1">John Doe</h5>
+                                    <p class="text-muted small">January 2, 2024</p>
+                                    <p>Great article! Very informative and well-written.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment mb-4">
+                            <div class="d-flex">
+                                <img src="presenter.jpg" class="rounded-circle me-3" alt="User">
+                                <div>
+                                    <h5 class="mb-1">Jane Smith</h5>
+                                    <p class="text-muted small">January 3, 2024</p>
+                                    <p>Thanks for sharing this valuable information!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Comment Form -->
+                        <div class="comment-form mt-4">
+                            <h4>Leave a Comment</h4>
+                            <form onsubmit="handleComment(event)">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="Your Name" id="commentName" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" placeholder="Your Email" id="commentEmail" required>
+                                </div>
+                                <div class="mb-3">
+                                    <textarea class="form-control" rows="4" placeholder="Your Comment" id="commentText" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Post Comment</button>
+                            </form>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white mt-5 py-3">
+        <div class="container text-center">
+            <p>&copy; 2024 My Blog. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Sample articles data
+        const articles = [
+            { 
+                id: 1, 
+                title: "The Future of AI", 
+                category: "technology",
+                date: "2024-01-15",
+                image: "presenter.jpg",
+                content: `
+                    <p>Artificial Intelligence is revolutionizing the way we live and work. From self-driving cars to virtual assistants, AI is becoming an integral part of our daily lives.</p>
+                    <h2>The Current State of AI</h2>
+                    <p>Today's AI systems can perform tasks that were once thought to be exclusively human, such as recognizing speech, making decisions, and even creating art.</p>
+                    <h3>Future Possibilities</h3>
+                    <p>As AI continues to evolve, we can expect even more groundbreaking developments in fields like healthcare, education, and environmental protection.</p>
+                `
+            },
+            { 
+                id: 2, 
+                title: "Blockchain Revolution", 
+                category: "technology",
+                date: "2024-01-20",
+                image: "presenter.jpg",
+                content: `
+                    <p>Blockchain technology is transforming industries beyond cryptocurrency. Its decentralized nature offers new possibilities for secure and transparent transactions.</p>
+                    <h2>Understanding Blockchain</h2>
+                    <p>At its core, blockchain is a distributed ledger that records transactions across multiple computers, making it nearly impossible to alter historical data.</p>
+                    <h3>Real-World Applications</h3>
+                    <p>From supply chain management to voting systems, blockchain is finding applications in various sectors, promising increased efficiency and security.</p>
+                `
+            },
+            { 
+                id: 3, 
+                title: "5G Technology Explained", 
+                category: "technology",
+                date: "2024-01-25",
+                image: "presenter.jpg",
+                content: `
+                    <p>5G is the fifth generation of mobile networks, offering unprecedented speed and connectivity. It's set to revolutionize how we interact with technology.</p>
+                    <h2>What Makes 5G Special?</h2>
+                    <p>With speeds up to 100 times faster than 4G, 5G enables new applications like augmented reality, remote surgery, and smart cities.</p>
+                    <h3>The Future of Connectivity</h3>
+                    <p>As 5G networks expand globally, we're entering a new era of digital transformation that will impact every aspect of our lives.</p>
+                `
+            },
+            { 
+                id: 4, 
+                title: "Best Beaches in Bali", 
+                category: "travel",
+                date: "2024-02-01",
+                image: "presenter.jpg",
+                content: `
+                    <p>Bali, known as the Island of the Gods, boasts some of the most beautiful beaches in the world. From white sand to black sand beaches, there's something for everyone.</p>
+                    <h2>Top Beach Destinations</h2>
+                    <p>Kuta Beach offers great surfing, while Nusa Dua provides luxury resorts and calm waters perfect for swimming.</p>
+                    <h3>Hidden Gems</h3>
+                    <p>For those seeking tranquility, visit the lesser-known beaches like Green Bowl Beach or Nyang Nyang Beach.</p>
+                `
+            },
+            { 
+                id: 5, 
+                title: "Hidden Gems in Japan", 
+                category: "travel",
+                date: "2024-02-05",
+                image: "presenter.jpg",
+                content: `
+                    <p>Beyond Tokyo and Kyoto, Japan is full of hidden treasures waiting to be discovered by adventurous travelers.</p>
+                    <h2>Off-the-Beaten-Path Destinations</h2>
+                    <p>From the art island of Naoshima to the historic streets of Kanazawa, these lesser-known destinations offer authentic Japanese experiences.</p>
+                    <h3>Local Experiences</h3>
+                    <p>Discover traditional crafts, local cuisine, and unique cultural experiences that most tourists miss.</p>
+                `
+            },
+            { 
+                id: 6, 
+                title: "European Road Trip Guide", 
+                category: "travel",
+                date: "2024-02-10",
+                image: "presenter.jpg",
+                content: `
+                    <p>Europe offers some of the most scenic road trips in the world, with diverse landscapes and rich cultural experiences along the way.</p>
+                    <h2>Best Routes</h2>
+                    <p>From the Amalfi Coast to the Scottish Highlands, discover the most breathtaking road trip routes in Europe.</p>
+                    <h3>Planning Tips</h3>
+                    <p>Learn how to plan the perfect European road trip, including border crossings, toll roads, and must-see attractions.</p>
+                `
+            },
+            { 
+                id: 7, 
+                title: "Italian Cooking Secrets", 
+                category: "food",
+                date: "2024-02-15",
+                image: "presenter.jpg",
+                content: `
+                    <p>Italian cuisine is beloved worldwide for its simplicity and rich flavors. Learn the secrets behind authentic Italian cooking.</p>
+                    <h2>Essential Ingredients</h2>
+                    <p>Discover the key ingredients that make Italian food special, from high-quality olive oil to fresh herbs and aged cheeses.</p>
+                    <h3>Classic Recipes</h3>
+                    <p>Master the art of making perfect pasta, authentic pizza, and traditional Italian desserts.</p>
+                `
+            },
+            { 
+                id: 8, 
+                title: "Healthy Meal Prep Ideas", 
+                category: "food",
+                date: "2024-02-20",
+                image: "presenter.jpg",
+                content: `
+                    <p>Meal prepping is the key to maintaining a healthy diet while saving time and money. Learn how to make it work for you.</p>
+                    <h2>Planning Your Meals</h2>
+                    <p>Discover how to create balanced meal plans that keep you satisfied and energized throughout the week.</p>
+                    <h3>Storage Tips</h3>
+                    <p>Learn the best ways to store prepped meals to maintain freshness and flavor.</p>
+                `
+            },
+            { 
+                id: 9, 
+                title: "Best Street Food in Asia", 
+                category: "food",
+                date: "2024-02-25",
+                image: "presenter.jpg",
+                content: `
+                    <p>Asian street food offers an explosion of flavors and textures. Explore the best street food destinations across Asia.</p>
+                    <h2>Must-Try Dishes</h2>
+                    <p>From Thai pad thai to Japanese takoyaki, discover the iconic street foods you shouldn't miss.</p>
+                    <h3>Food Safety Tips</h3>
+                    <p>Learn how to enjoy street food safely while traveling in Asia.</p>
+                `
+            },
+            { 
+                id: 10, 
+                title: "Minimalist Living Tips", 
+                category: "lifestyle",
+                date: "2024-03-01",
+                image: "presenter.jpg",
+                content: `
+                    <p>Minimalism is more than just decluttering - it's a lifestyle that can bring more joy and less stress to your life.</p>
+                    <h2>Getting Started</h2>
+                    <p>Learn practical steps to begin your minimalist journey, from decluttering to changing your shopping habits.</p>
+                    <h3>Sustainable Minimalism</h3>
+                    <p>Discover how minimalism can help reduce your environmental impact while improving your quality of life.</p>
+                `
+            },
+            { 
+                id: 11, 
+                title: "Work-Life Balance Guide", 
+                category: "lifestyle",
+                date: "2024-03-05",
+                image: "presenter.jpg",
+                content: `
+                    <p>Finding the right balance between work and personal life is crucial for long-term happiness and success.</p>
+                    <h2>Setting Boundaries</h2>
+                    <p>Learn how to establish healthy boundaries between work and personal time.</p>
+                    <h3>Time Management</h3>
+                    <p>Discover effective strategies for managing your time and reducing stress.</p>
+                `
+            },
+            { 
+                id: 12, 
+                title: "Sustainable Living", 
+                category: "lifestyle",
+                date: "2024-03-10",
+                image: "presenter.jpg",
+                content: `
+                    <p>Sustainable living is about making choices that reduce your environmental impact while improving your quality of life.</p>
+                    <h2>Simple Changes</h2>
+                    <p>Discover easy ways to make your daily routine more sustainable, from reducing waste to conserving energy.</p>
+                    <h3>Long-Term Impact</h3>
+                    <p>Learn how small changes in your lifestyle can contribute to a healthier planet.</p>
+                `
+            }
+        ];
+
+        function loadArticle() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const articleId = parseInt(urlParams.get('id')) || 1;
+            const article = articles.find(a => a.id === articleId) || articles[0];
+            
+            // Update article content
+            document.title = `${article.title} - My Blog`;
+            document.querySelector('h1').textContent = article.title;
+            document.querySelector('.text-muted span').textContent = `Posted on ${new Date(article.date).toLocaleDateString()}`;
+            document.querySelector('.article-content').innerHTML = article.content;
+            
+            // Update navigation links
+            const prevArticle = articles.find(a => a.id === articleId - 1);
+            const nextArticle = articles.find(a => a.id === articleId + 1);
+            
+            const prevLink = document.querySelector('.article-navigation a:first-child');
+            const nextLink = document.querySelector('.article-navigation a:last-child');
+            
+            if (prevArticle) {
+                prevLink.href = `article.html?id=${prevArticle.id}`;
+                prevLink.innerHTML = `<i class="fas fa-arrow-left me-2"></i>${prevArticle.title}`;
+            } else {
+                prevLink.style.display = 'none';
+            }
+            
+            if (nextArticle) {
+                nextLink.href = `article.html?id=${nextArticle.id}`;
+                nextLink.innerHTML = `${nextArticle.title}<i class="fas fa-arrow-right ms-2"></i>`;
+            } else {
+                nextLink.style.display = 'none';
+            }
+            
+            // Update related articles
+            const relatedArticles = articles
+                .filter(a => a.category === article.category && a.id !== article.id)
+                .slice(0, 3);
+            
+            const relatedArticlesDiv = document.querySelector('.related-articles .row');
+            let html = '';
+            
+            relatedArticles.forEach(relatedArticle => {
+                html += `
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="${relatedArticle.image}" class="card-img-top" alt="${relatedArticle.title}">
+                            <div class="card-body">
+                                <h5 class="card-title">${relatedArticle.title}</h5>
+                                <a href="article.html?id=${relatedArticle.id}" class="btn btn-sm btn-outline-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+            
+            relatedArticlesDiv.innerHTML = html;
+        }
+
+        // Load article when page loads
+        loadArticle();
+
+        function shareOnFacebook() {
+            const url = encodeURIComponent(window.location.href);
+            window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
+        }
+
+        function shareOnTwitter() {
+            const url = encodeURIComponent(window.location.href);
+            const title = encodeURIComponent(document.title);
+            window.open(`https://twitter.com/intent/tweet?url=${url}&text=${title}`, '_blank');
+        }
+
+        function shareOnInstagram() {
+            alert('Instagram sharing is not available for web articles. Please use the Instagram app to share.');
+        }
+
+        function handleComment(event) {
+            event.preventDefault();
+            const name = document.getElementById('commentName').value;
+            const email = document.getElementById('commentEmail').value;
+            const text = document.getElementById('commentText').value;
+            
+            // Here you would typically send this data to your backend
+            alert('Comment submitted successfully!');
+            
+            // Clear the form
+            document.getElementById('commentName').value = '';
+            document.getElementById('commentEmail').value = '';
+            document.getElementById('commentText').value = '';
+        }
+    </script>
+</body>
+</html> 
