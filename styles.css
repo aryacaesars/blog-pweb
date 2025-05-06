@@ -3,6 +3,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
+    background-color: #f8f9fa;
 }
 
 /* Navigation */
@@ -11,6 +12,16 @@ body {
     position: sticky;
     top: 0;
     z-index: 1030;
+    background-color: #0d1a4a !important; /* dark blue */
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: #fff !important;
+}
+
+.navbar .nav-link.active, .navbar .nav-link:hover {
+    color: #90caf9 !important; /* light blue for hover/active */
 }
 
 /* Article Cards */
@@ -36,13 +47,13 @@ body {
 .article-content h2 {
     margin-top: 2rem;
     margin-bottom: 1rem;
-    color: #2c3e50;
+    color: #0d1a4a;
 }
 
 .article-content h3 {
     margin-top: 1.5rem;
     margin-bottom: 1rem;
-    color: #34495e;
+    color: #1a237e;
 }
 
 /* Share Buttons */
@@ -74,7 +85,7 @@ body {
 
 /* Comment Form */
 .comment-form {
-    background-color: #f8f9fa;
+    background-color: #e3eafc;
     padding: 1.5rem;
     border-radius: 0.5rem;
 }
@@ -88,26 +99,69 @@ body {
     height: 150px;
 }
 
+/* Footer */
+footer.bg-dark {
+    background-color: #0d1a4a !important;
+}
+
+footer, .footer, .bg-dark {
+    background-color: #0d1a4a !important;
+    color: #fff !important;
+}
+
+footer a, .footer a {
+    color: #90caf9 !important;
+}
+
+footer a:hover, .footer a:hover {
+    color: #fff !important;
+}
+
+/* Buttons */
+.btn-primary, .btn-outline-primary {
+    background-color: #1a237e;
+    border-color: #1a237e;
+    color: #fff;
+}
+
+.btn-primary:hover, .btn-outline-primary:hover {
+    background-color: #0d1a4a;
+    border-color: #0d1a4a;
+    color: #fff;
+}
+
+.btn-outline-primary {
+    background-color: transparent;
+    color: #1a237e;
+}
+
+.btn-outline-primary:hover {
+    background-color: #0d1a4a;
+    color: #fff;
+}
+
+/* List group active */
+.list-group-item.active {
+    background-color: #0d1a4a;
+    border-color: #0d1a4a;
+}
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .article-content {
         font-size: 1rem;
     }
-    
     .share-buttons {
         margin-top: 1rem;
     }
-    
     .article-navigation {
         flex-direction: column;
         gap: 1rem;
     }
-    
     .article-navigation a {
         width: 100%;
         text-align: center;
     }
-    
     .sticky-sidebar {
         position: static;
         max-height: none;
@@ -122,4 +176,4 @@ body {
     height: fit-content;
     max-height: calc(100vh - 80px);
     overflow-y: auto;
-} 
+}
